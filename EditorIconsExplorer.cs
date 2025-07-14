@@ -258,6 +258,7 @@ public class EditorIconsExplorer : EditorWindow
 		var iconDetails = new VisualElement();
 		iconDetails.style.flexDirection = FlexDirection.Column;
 		iconDetails.style.justifyContent = Justify.FlexStart;
+		iconDetails.style.flexGrow = 1f;
 
 		// icon name and copy button container
 		var iconNameContainer = new VisualElement();
@@ -269,13 +270,13 @@ public class EditorIconsExplorer : EditorWindow
 		// icon name label
 		var iconNameLabel = new Label("Name:");
 		iconNameLabel.style.width = 40;
-		iconNameLabel.style.flexShrink = 0;
 		iconNameContainer.Add(iconNameLabel);
 
 		// icon name text field
 		_iconNameLabel = new TextField();
 		_iconNameLabel.style.flexGrow = 1;
 		_iconNameLabel.style.flexShrink = 1;
+		_iconNameLabel.style.height = 18f;
 		_iconNameLabel.labelElement.style.display = DisplayStyle.None;
 		_iconNameLabel.SetEnabled(false);
 		iconNameContainer.Add(_iconNameLabel);
@@ -287,7 +288,6 @@ public class EditorIconsExplorer : EditorWindow
 		});
 		iconNameCopyButton.text = "Copy to clipboard";
 		iconNameCopyButton.style.width = 150;
-		iconNameCopyButton.style.flexShrink = 0;
 		iconNameContainer.Add(iconNameCopyButton);
 
 		// icon size container
@@ -307,6 +307,7 @@ public class EditorIconsExplorer : EditorWindow
 		_iconSizeTextField = new TextField("Size: ");
 		_iconSizeTextField.style.flexGrow = 1;
 		_iconSizeTextField.style.flexShrink = 1;
+		_iconSizeTextField.style.height = 18f;
 		_iconSizeTextField.labelElement.style.display = DisplayStyle.None;
 		_iconSizeTextField.SetEnabled(false);
 		iconSizeContainer.Add(_iconSizeTextField);
@@ -616,7 +617,7 @@ public class EditorIconsExplorer : EditorWindow
 		"d_UnityEditor.HierarchyWindow", "d_UnityEditor.InspectorWindow", "d_UnityEditor.LookDevView",
 		"d_UnityEditor.ProfilerWindow", "d_UnityEditor.SceneHierarchyWindow", "d_UnityEditor.SceneView",
 		"d_UnityEditor.Timeline.TimelineWindow", "d_UnityEditor.VersionControl", "d_UnityLogo", "d_VerticalSplit",
-		"d_ViewToolMove On", "d_ViewToolMove", "d_ViewToolOrbit On", "d_ViewToolOrbit", "d_ViewToolZoom On",
+		"d_ViewToolMove On", "d_ViewToolMoave", "d_ViewToolOrbit On", "d_ViewToolOrbit", "d_ViewToolZoom On",
 		"d_ViewToolZoom", "d_VisibilityOff", "d_VisibilityOn", "d_VUMeterTextureHorizontal", "d_VUMeterTextureVertical",
 		"d_WaitSpin00", "d_WaitSpin01", "d_WaitSpin02", "d_WaitSpin03", "d_WaitSpin04", "d_WaitSpin05", "d_WaitSpin06",
 		"d_WaitSpin07", "d_WaitSpin08", "d_WaitSpin09", "d_WaitSpin10", "d_WaitSpin11", "d_WelcomeScreen.AssetStoreLogo",
