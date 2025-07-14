@@ -11,7 +11,7 @@
 - 🔍 **Explore** over 1200 internal Unity Editor icons
 - ⭐ **Mark Favorites** with a right-click for quick access
 - 🖼️ **Preview** and view icon metadata (name & size)
-- 📋 **Copy Usage Code** to clipboard (`EditorGUIUtility.IconContent`)
+- 📋 Quick **Copy Name to Clipboard**
 - 💾 **Export Icons** as PNG files
 - ⚡ Built with **UI Toolkit** for performance and responsiveness
 
@@ -47,7 +47,7 @@
 ## 📌 Example
 - IMGUI
 	```csharp
-	GUIContent icon = EditorGUIUtility.IconContent("d_PlayButton");
+	GUIContent icon = EditorGUIUtility.IconContent("d_Favorite");
 	GUILayout.Label(icon);
 	```
 
@@ -61,7 +61,7 @@
 
 ## 🧰 Requirements
 
-- Unity 2021.3 or newer (recommended) because of UI Toolkit
+- Unity 2021.3 or newer because of UI Toolkit support
 
 ---
 
